@@ -1,0 +1,193 @@
+{
+  u'contributors': None,
+  u'truncated': False,
+  u'text': u'Gustav Klimt\nFlower Garden 1907\n#art #painting #gustavklimt #klimt https://t.co/fz4yanlVgo',
+  u'is_quote_status': False,
+  u'in_reply_to_status_id': None,
+  u'id': 907398490527031296L,
+  u'favorite_count': 0,
+  u'source': u'<a href="http://gurukoala.com" rel="nofollow">hello-09098</a>',
+  u'retweeted': False,
+  u'coordinates': None,
+  u'entities': {
+    u'symbols': [
+      
+    ],
+    u'user_mentions': [
+      
+    ],
+    u'hashtags': [
+      {
+        u'indices': [
+          32,
+          36
+        ],
+        u'text': u'art'
+      },
+      {
+        u'indices': [
+          37,
+          46
+        ],
+        u'text': u'painting'
+      },
+      {
+        u'indices': [
+          47,
+          59
+        ],
+        u'text': u'gustavklimt'
+      },
+      {
+        u'indices': [
+          60,
+          66
+        ],
+        u'text': u'klimt'
+      }
+    ],
+    u'urls': [
+      
+    ],
+    u'media': [
+      {
+        u'expanded_url': u'https://twitter.com/lisaeme75659217/status/907398490527031296/photo/1',
+        u'display_url': u'pic.twitter.com/fz4yanlVgo',
+        u'url': u'https://t.co/fz4yanlVgo',
+        u'media_url_https': u'https://pbs.twimg.com/media/DJe6HZvX0AAAIGE.jpg',
+        u'id_str': u'907398486269874176',
+        u'sizes': {
+          u'large': {
+            u'h': 2048,
+            u'resize': u'fit',
+            u'w': 2042
+          },
+          u'small': {
+            u'h': 680,
+            u'resize': u'fit',
+            u'w': 678
+          },
+          u'medium': {
+            u'h': 1200,
+            u'resize': u'fit',
+            u'w': 1196
+          },
+          u'thumb': {
+            u'h': 150,
+            u'resize': u'crop',
+            u'w': 150
+          }
+        },
+        u'indices': [
+          67,
+          90
+        ],
+        u'type': u'photo',
+        u'id': 907398486269874176L,
+        u'media_url': u'http://pbs.twimg.com/media/DJe6HZvX0AAAIGE.jpg'
+      }
+    ]
+  },
+  u'in_reply_to_screen_name': None,
+  u'in_reply_to_user_id': None,
+  u'retweet_count': 1,
+  u'id_str': u'907398490527031296',
+  u'favorited': False,
+  u'user': {
+    u'follow_request_sent': False,
+    u'has_extended_profile': False,
+    u'profile_use_background_image': False,
+    u'default_profile_image': False,
+    u'id': 899308310461075457L,
+    u'profile_background_image_url_https': u'https://abs.twimg.com/images/themes/theme1/bg.png',
+    u'verified': False,
+    u'translator_type': u'none',
+    u'profile_text_color': u'000000',
+    u'profile_image_url_https': u'https://pbs.twimg.com/profile_images/899321353236623360/eCM1GiK7_normal.jpg',
+    u'profile_sidebar_fill_color': u'000000',
+    u'entities': {
+      u'description': {
+        u'urls': [
+          
+        ]
+      }
+    },
+    u'followers_count': 64,
+    u'profile_sidebar_border_color': u'000000',
+    u'id_str': u'899308310461075457',
+    u'profile_background_color': u'000000',
+    u'listed_count': 0,
+    u'is_translation_enabled': False,
+    u'utc_offset': None,
+    u'statuses_count': 182,
+    u'description': u'art,painting',
+    u'friends_count': 329,
+    u'location': u'',
+    u'profile_link_color': u'7FDBB6',
+    u'profile_image_url': u'http://pbs.twimg.com/profile_images/899321353236623360/eCM1GiK7_normal.jpg',
+    u'following': False,
+    u'geo_enabled': False,
+    u'profile_banner_url': u'https://pbs.twimg.com/profile_banners/899308310461075457/1503249816',
+    u'profile_background_image_url': u'http://abs.twimg.com/images/themes/theme1/bg.png',
+    u'screen_name': u'lisaeme75659217',
+    u'lang': u'en',
+    u'profile_background_tile': False,
+    u'favourites_count': 16,
+    u'name': u'lisa emerson',
+    u'notifications': False,
+    u'url': None,
+    u'created_at': u'Sun Aug 20 16:33:04 +0000 2017',
+    u'contributors_enabled': False,
+    u'time_zone': None,
+    u'protected': False,
+    u'default_profile': False,
+    u'is_translator': False
+  },
+  u'geo': None,
+  u'in_reply_to_user_id_str': None,
+  u'possibly_sensitive': False,
+  u'lang': u'no',
+  u'created_at': u'Tue Sep 12 00:20:33 +0000 2017',
+  u'in_reply_to_status_id_str': None,
+  u'place': None,
+  u'extended_entities': {
+    u'media': [
+      {
+        u'expanded_url': u'https://twitter.com/lisaeme75659217/status/907398490527031296/photo/1',
+        u'display_url': u'pic.twitter.com/fz4yanlVgo',
+        u'url': u'https://t.co/fz4yanlVgo',
+        u'media_url_https': u'https://pbs.twimg.com/media/DJe6HZvX0AAAIGE.jpg',
+        u'id_str': u'907398486269874176',
+        u'sizes': {
+          u'large': {
+            u'h': 2048,
+            u'resize': u'fit',
+            u'w': 2042
+          },
+          u'small': {
+            u'h': 680,
+            u'resize': u'fit',
+            u'w': 678
+          },
+          u'medium': {
+            u'h': 1200,
+            u'resize': u'fit',
+            u'w': 1196
+          },
+          u'thumb': {
+            u'h': 150,
+            u'resize': u'crop',
+            u'w': 150
+          }
+        },
+        u'indices': [
+          67,
+          90
+        ],
+        u'type': u'photo',
+        u'id': 907398486269874176L,
+        u'media_url': u'http://pbs.twimg.com/media/DJe6HZvX0AAAIGE.jpg'
+      }
+    ]
+  }
+}
