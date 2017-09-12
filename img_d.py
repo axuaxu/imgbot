@@ -12,7 +12,7 @@ api = tweepy.API(auth)
 
  
 
-ss = api.user_timeline(id='lisaeme75659217',count=1)
+ss = api.user_timeline(id='Amazing_Greece',count=5)
 for status in ss:
     #print status.author, status.user
     sid = status._json['id']
