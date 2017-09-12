@@ -18,4 +18,5 @@ for status in ss:
     sid = status._json['id']
     #api.retweet(sid)
     #print status._json['media_url']
+    print status.text
     print status._json['entities']['media'][0]['media_url_https']
