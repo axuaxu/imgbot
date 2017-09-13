@@ -17,9 +17,9 @@ auth.set_access_token(access_token, access_token_secret)
 api = tweepy.API(auth)
 
 #4502
-twi_id = "Amazing_Greece"
+twi_id = "heartouchingpic"
 line = "" 
-ft = codecs.open("greece.txt","w",encoding="utf-8")
+ft = codecs.open("heartouchingpic.txt","w",encoding="utf-8")
 ss = api.user_timeline(id=twi_id,count=100)
 for status in ss:
     iurl = ''

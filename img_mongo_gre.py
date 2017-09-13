@@ -19,9 +19,9 @@ sys.setdefaultencoding('utf-8')
 #4502
 client = MongoClient()
 db = client['travel_greece']
-coll = db['greece']
+coll = db['heartouchingpic']
 
-ft = codecs.open("greece.txt","r",encoding="utf-8")
+ft = codecs.open("heartouchingpic.txt","r",encoding="utf-8")
 for line in ft:
        # print line.encode('utf-8')
     t = line.split('||')
