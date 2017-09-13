@@ -6,7 +6,9 @@ from time import sleep
 import sys
 import codecs
 import json
-import urllib
+from pymongo import MongoClient
+ 
+
 
 reload(sys)
 sys.setdefaultencoding('utf-8')
@@ -15,22 +17,24 @@ sys.setdefaultencoding('utf-8')
 
 
 #4502
+client = MongoClient()
+db = client['travel_greece']
+coll = db['greece']
 
 ft = codecs.open("greece.txt","r",encoding="utf-8")
 for line in ft:
        # print line.encode('utf-8')
     t = line.split('||')
     url = t[3]
-    #print t[3],t[4]
-    if '.jpg' in t[3]:
-    	narr = t[3].split('/')
-    	img = narr[-1]
-    	iname = '.\\travelpic\\greece\\'+img
-    	print iname
-    	urllib.urlretrieve(t[3],iname)
-    if '.mp4' in t[4]:
-    	varr = t[4].split('/')
-    	video = varr[-1]
-        vname =  '.\\travelvideo\\greece\\'+video
-        #urllib.urlretrieve(t[4],vname)
-        print vname
+    print t[3],t[4]
+   
+    doc = {
+    "name": t[0],
+    "tid": t[1],
+    "desc": t[2],
+    "imgurl": t[3],
+    "videourl": t[4]
+    }
+ 
+    doc_id = coll.insert_one(doc).inserted_id
+
