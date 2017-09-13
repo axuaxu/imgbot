@@ -30,7 +30,7 @@ for line in ft:
     	urllib.urlretrieve(t[3],iname)
     if '.mp4' in t[4]:
     	varr = t[4].split('/')
-    	video = varr[-1]
+    	video = varr[-1].replace('\n','')
         vname =  '.\\travelvideo\\greece\\'+video
-        #urllib.urlretrieve(t[4],vname)
+        urllib.urlretrieve(t[4],vname)
         print vname
