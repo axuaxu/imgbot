@@ -5,6 +5,8 @@ import tweepy
 from time import sleep
 from credentials import *
 import sys
+import codecs
+import json
 
 reload(sys)
 sys.setdefaultencoding('utf-8')
@@ -15,12 +17,14 @@ auth.set_access_token(access_token, access_token_secret)
 api = tweepy.API(auth)
 
  
-
-ss = api.user_timeline(id='lisaeme75659217',count=1)
+ft = codecs.open("gt.txt","w",encoding="utf-16")
+ss = api.user_timeline(id='Amazing_Greece',count=1)
 for status in ss:
     #print status.author, status.user
     sid = status._json['id']
     #api.retweet(sid)
     #print status._json['media_url']
-    print status.text
-    print status._json['entities']['media'][0]['media_url_https']
+    print status.text.encode('utf-16')
+    #print status._json['entities']['media'][0]['media_url_https']
+    #print status._json
+    json.dump(status._json,ft)
