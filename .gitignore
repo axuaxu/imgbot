@@ -1,7 +1,10 @@
 credentials.py
 *.csv
 *.jpg
+*.mp4
 \images
 \travelpic
 \travelvideo
 \pics
+\videos
+\mypics

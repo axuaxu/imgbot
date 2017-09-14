@@ -17,19 +17,22 @@ auth.set_access_token(access_token, access_token_secret)
 api = tweepy.API(auth)
 
 #4502
-maxid = '867345600366424067'
-fout = codecs.open("pic_url.txt","w",encoding="utf-8")
-ftwi = open('pictwi_list.txt','r')
+maxid = '855504127509639169'
+fout = codecs.open("hkb_url.txt","w",encoding="utf-8")
+ftwi = codecs.open('hkb_list.txt','r',encoding="utf-8")
 line = ""
 for twi_id in ftwi:
+         print twi_id
          twi_id = twi_id.replace('\n','')
-         ss = api.user_timeline(id=twi_id, max_id = maxid, count=20)
+         #ss = api.user_timeline(id=twi_id, max_id = maxid, count=3)
+         ss = api.user_timeline(id=twi_id, count=100)
          for status in ss:
              iurl = ''
              vurl = ''
              #print status.author, status.user
              sid = status._json['id']
              stext = status.text.encode('utf-8')
+             stext = stext.replace('\r',' ')
              stext = stext.replace('\n',' ')
              #api.retweet(sid)
              #print status._json['media_url']
@@ -42,12 +45,14 @@ for twi_id in ftwi:
                        if 'media' in status.extended_entities:
                             for video in status.extended_entities['media']:
                                 if 'video_info' in video:
-                                   vurl = video['video_info']['variants'][1]['url']
-                                   print vurl
+                                    if len( video['video_info']['variants']) >0 :
+                                        vurl = video['video_info']['variants'][1]['url']
+                                        print vurl
     
                                   #print iurl
                                   #print status._json
              line = line + twi_id+'||'+str(sid)+'||'+stext+'||'+iurl+'||'+vurl+'\n'
+             #print line.encode('utf-8')
     #json.dump(status._json,ft)
 #print line
 #print surl
