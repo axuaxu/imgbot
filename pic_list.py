@@ -17,15 +17,15 @@ auth.set_access_token(access_token, access_token_secret)
 api = tweepy.API(auth)
 
 #4502
-maxid = '855504127509639169'
+maxid = '907872758364868608'
 fout = codecs.open("hkb_url.txt","w",encoding="utf-8")
 ftwi = codecs.open('hkb_list.txt','r',encoding="utf-8")
 line = ""
 for twi_id in ftwi:
          print twi_id
          twi_id = twi_id.replace('\n','')
-         #ss = api.user_timeline(id=twi_id, max_id = maxid, count=3)
-         ss = api.user_timeline(id=twi_id, count=100)
+         ss = api.user_timeline(id=twi_id, max_id = maxid, count=100)
+         #ss = api.user_timeline(id=twi_id, count=100)
          for status in ss:
              iurl = ''
              vurl = ''
