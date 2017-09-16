@@ -22,7 +22,7 @@ def flist():
 # writing csv
  
 ft = flist()  
-with open('flist.csv', 'wb') as f:
+with open('flist-01.csv', 'wb') as f:
       f.write(ft)
 
  
