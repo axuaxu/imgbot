@@ -18,8 +18,8 @@ api = tweepy.API(auth)
 
 #4502
 maxid = '907872758364868608'
-fout = codecs.open("hkb_url.txt","w",encoding="utf-8")
-ftwi = codecs.open('hkb_list.txt','r',encoding="utf-8")
+fout = codecs.open("photo_url.txt","w",encoding="utf-8")
+ftwi = codecs.open('photo_list.txt','r',encoding="utf-8")
 line = ""
 for twi_id in ftwi:
          print twi_id
