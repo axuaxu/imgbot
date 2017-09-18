@@ -17,14 +17,14 @@ auth.set_access_token(access_token, access_token_secret)
 api = tweepy.API(auth)
 
 #4502
-maxid = '907872758364868608'
-fout = codecs.open("photo_url.txt","w",encoding="utf-8")
-ftwi = codecs.open('photo_list.txt','r',encoding="utf-8")
+maxid = '907845557850435584'
+fout = codecs.open("ghi_url.txt","w",encoding="utf-8")
+ftwi = codecs.open('ghi_list.txt','r',encoding="utf-8")
 line = ""
 for twi_id in ftwi:
          print twi_id
          twi_id = twi_id.replace('\n','')
-         ss = api.user_timeline(id=twi_id, max_id = maxid, count=100)
+         ss = api.user_timeline(id=twi_id, max_id = maxid, count=200)
          #ss = api.user_timeline(id=twi_id, count=100)
          for status in ss:
              iurl = ''
@@ -45,7 +45,7 @@ for twi_id in ftwi:
                        if 'media' in status.extended_entities:
                             for video in status.extended_entities['media']:
                                 if 'video_info' in video:
-                                    if len( video['video_info']['variants']) >0 :
+                                    if len( video['video_info']['variants']) >1 :
                                         vurl = video['video_info']['variants'][1]['url']
                                         print vurl
     

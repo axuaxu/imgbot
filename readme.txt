@@ -29,7 +29,10 @@ pic_down.py  download image  param:[input: xxx_url.txt,  download dir: \pics, \v
 
 build web site:
 img-tree-02.py   list image files    param: [dir, output file: img-?.csv]
-img-html.py      write unitegallery html files     param:[input file: img-?.csv, output file: template:0-01.html]
+img-html-100.py      write unitegallery html files  
+                     param:[input file: img-?.csv, output file: img-html-?.html template:img-html-100-?.html]
+img-html-gg.py   write gammagallery htmls
+                  param:[input file: img-?.csv, output file: template out-gg-?.html]
 
 
 
