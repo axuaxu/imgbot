@@ -18,8 +18,8 @@ api = tweepy.API(auth)
 
 #4502
 maxid = '907845557850435584'
-fout = codecs.open("ghi_url.txt","w",encoding="utf-8")
-ftwi = codecs.open('ghi_list.txt','r',encoding="utf-8")
+fout = codecs.open("twi_url.txt","w",encoding="utf-8")
+ftwi = codecs.open('twi_list.txt','r',encoding="utf-8")
 line = ""
 for twi_id in ftwi:
          print twi_id
